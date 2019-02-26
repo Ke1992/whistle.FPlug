@@ -1,0 +1,13 @@
+@import "../../common/css/color.scss";
+
+.container {
+	overflow: hidden;
+	position: relative;
+	background-color: $dark-white;
+	border-bottom: 1px solid $light-gray;
+
+	&-fold {
+		height: 42px;
+		overflow: hidden;
+	}
+}

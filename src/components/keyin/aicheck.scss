@@ -1,0 +1,97 @@
+@import "../../common/css/color.scss";
+
+.ai-check {
+	&-wrap {
+		word-break: break-all;
+	}
+
+	/* 正常状态 */
+	&-span {
+		position: relative;
+		color: $light-black;
+		padding-right: 15px;
+
+		i {
+			position: relative;
+			top: -3px;
+			cursor: pointer;
+			margin-right: 5px;
+			font-size: 12px;
+			border: 2px solid $ponceau;
+
+			font-family: 'icomoon' !important;
+			speak: none;
+			font-style: normal;
+			font-weight: normal;
+			font-variant: normal;
+			text-transform: none;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+
+			&:before {
+				content: "";
+			}
+
+			/* shape--形状(方形、圆形) */
+			&.square {
+				padding: 2px 8px;
+			}
+
+			&.circular {
+				padding: 2px 8px;
+				border-radius: 100%;
+			}
+
+			/* inner--选中状态(勾、圆点、方点) */
+			&.hook {
+				padding: 2px;
+
+				&:before {
+					content: "\ea10";
+				}
+			}
+
+			&.point {
+				padding: 2px;
+
+				&:before {
+					content: "\e902";
+				}
+			}
+
+			&.dot {
+				padding: 2px;
+
+				&:before {
+					content: "\e903";
+				}
+			}
+
+			/* skin--皮肤(填充、空心) */
+			&.fill {
+				color: $white;
+				background-color: $ponceau;
+			}
+
+			&.empty {
+				color: $ponceau;
+			}
+		}
+
+		/* disabled状态 */
+		&.disabled {
+			i {
+				cursor: not-allowed;
+				border: 2px solid $light-black;
+
+				&.fill {
+					background-color: $light-black;
+				}
+
+				&.empty {
+					color: $light-black;
+				}
+			}
+		}
+	}
+}

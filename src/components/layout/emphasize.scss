@@ -1,0 +1,15 @@
+@import "../../common/css/color.scss";
+
+.emphasize {
+	color: $ponceau;
+	font-weight: bold;
+	line-height: 30px;
+	display: inline-block;
+
+	em {
+		top: -1px;
+		font-size: 16px;
+		padding-right: 5px;
+		position: relative;
+	}
+}

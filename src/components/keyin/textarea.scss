@@ -1,0 +1,29 @@
+@import "../../common/css/color.scss";
+
+textarea {
+    width: 100%;
+    height: 160px;
+    outline: none;
+    font-size: 14px;
+    padding: 5px 8px;
+    background: $white;
+    color: $light-black;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+    border: 2px solid $middle-gray;
+
+    &:focus {
+        border: 2px solid $ponceau;
+    }
+
+    &.error {
+        border: 2px solid $ponceau;
+    }
+}
+
+textarea {
+    &[disabled] {
+        cursor: not-allowed;
+        background-color: $gray;
+    }
+}

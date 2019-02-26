@@ -1,0 +1,23 @@
+@import "../../../common/css/color.scss";
+
+.footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	font-size: 12px;
+	overflow: hidden;
+	padding: 10px 0px;
+	text-align: center;
+	padding-left: 80px;
+	box-sizing: border-box;
+	border-top: 2px dashed $dark-gray;
+
+	.link {
+		padding: 0 10px;
+
+		&:hover {
+			color: $black;
+		}
+	}
+}

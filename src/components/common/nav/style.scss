@@ -1,0 +1,167 @@
+@import "../../../common/css/color.scss";
+
+.sidebar {
+    top: 0;
+    left: 0;
+    z-index: 4;
+    width: 80px;
+    height: 100%;
+    position: fixed;
+    background-color: #4f5E6E;
+
+    /* logo */
+    .logo {
+        width: 100%;
+        padding: 30px 0;
+        text-align: center;
+
+        img {
+            width: 65%;
+            cursor: pointer;
+        }
+    }
+
+    /* 省略号 */
+    .ellipsis {
+        width: 36px;
+        height: 10px;
+        margin: auto;
+        display: block;
+        padding-bottom: 15px;
+
+        i {
+            width: 6px;
+            height: 6px;
+            float: left;
+            margin: 2px 3px;
+            border-radius: 100%;
+            display: inline-block;
+            background-color: $light-gray2;
+        }
+    }
+
+    /* 列表 */
+    ul {
+        width: 100%;
+        text-align: center;
+
+        a {
+            clear: both;
+            width: 100%;
+            display: block;
+            padding: 10px 0;
+            position: relative;
+            color: $light-gray2;
+
+            &:hover {
+                color: $ponceau;
+
+                span.title {
+                    color: $light-gray2;
+                }
+
+                span.min-title {
+                    display: block;
+                }
+            }
+
+            span {
+                display: block;
+
+                &.icon {
+                    font-size: 30px;
+                }
+
+                &.title {
+                    display: none;
+                    font-size: 14px;
+                    padding-top: 8px;
+                    font-weight: bold;
+                    letter-spacing: 2px;
+                    transition: all 0.3s;
+                }
+
+                &.min-title {
+                    top: 5px;
+                    left: 80px;
+                    width: 60px;
+                    display: none;
+                    color: $ponceau;
+                    font-size: 14px;
+                    cursor: default;
+                    line-height: 36px;
+                    font-weight: bold;
+                    position: absolute;
+                    background-color: $white;
+                    border: 2px solid $ponceau;
+
+                    &:before {
+                        top: 10px;
+                        left: -10px;
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        border-right: 8px solid $ponceau;
+                        border-top: 8px solid transparent;
+                        border-bottom: 8px solid transparent;
+                    }
+
+                    &:after {
+                        top: 10px;
+                        left: -7px;
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        border-right: 8px solid $white;
+                        border-top: 8px solid transparent;
+                        border-bottom: 8px solid transparent;
+                    }
+                }
+            }
+        }
+    }
+
+    li {
+        width: 100%;
+        padding-bottom: 15px;
+
+        &.on a {
+            color: $ponceau;
+            position: relative;
+
+            span.title {
+                color: $white;
+            }
+
+            &:before {
+                top: 0px;
+                width: 3px;
+                content: "";
+                height: 100%;
+                display: block;
+                position: absolute;
+                background-color: $ponceau;
+                border-radius: 0 3px 3px 0;
+            }
+        }
+    }
+}
+
+.sidebar {
+    ul a {
+        &:hover span.min-title {
+            display: none;
+        }
+
+        span {
+            &.title {
+                display: block;
+            }
+        }
+    }
+
+    li.on a:before {
+        width: 4px;
+        border-radius: 0 4px 4px 0;
+    }
+}

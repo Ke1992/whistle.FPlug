@@ -1,0 +1,80 @@
+@import "../../common/css/color.scss";
+
+.mould {
+	position: relative;
+	margin: auto;
+	padding: 0 20px;
+	min-height: 50px;
+	line-height: 50px;
+
+	.name {
+		float: left;
+		width: 140px;
+		display: inline-block;
+	}
+
+	.content {
+		margin-left: 140px;
+	}
+
+	.delete {
+		top: 0;
+		right: 20px;
+		cursor: pointer;
+		font-size: 18px;
+		font-weight: bold;
+		position: absolute;
+		padding-left: 10px;
+		transition: all 0.3s;
+
+		&:hover {
+			color: $ponceau;
+		}
+	}
+
+	&.full {
+		clear: both;
+	}
+
+	&.full-half {
+		clear: both;
+
+		.name {
+			width: 100px;
+		}
+
+		.content {
+			margin-left: 100px;
+		}
+	}
+
+	&.half {
+		width: 50%;
+		float: left;
+		padding-right: 60px;
+		box-sizing: border-box;
+
+		.name {
+			width: 100px;
+		}
+
+		.content {
+			margin-left: 100px;
+		}
+	}
+
+	&.mini {
+		float: left;
+		width: 33.33%;
+		padding-right: 20px;
+		box-sizing: border-box;
+
+		.name {
+			width: 100px;
+		}
+
+		.content {
+			margin-left: 100px;
+		}
+	}
+}

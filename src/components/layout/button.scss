@@ -1,0 +1,62 @@
+@import "../../common/css/color.scss";
+
+.btn {
+	height: 30px;
+	border: none;
+	color: $white;
+	outline: none;
+	padding: 0 10px;
+	cursor: pointer;
+	min-width: 70px;
+	font-weight: bold;
+
+	&-submit {
+		height: 44px;
+		font-size: 16px;
+		min-width: 100px;
+		padding: 0px 60px;
+		background: $blue;
+		letter-spacing: 2px;
+		border-bottom: 4px solid $dark-blue;
+	}
+
+	&-jump {
+		background: $ponceau;
+	}
+
+	&-search {
+		background: $blue;
+	}
+
+	&-log {
+		height: 30px;
+		min-width: 80px;
+		background: none;
+		position: relative;
+		font-weight: normal;
+		color: $light-black;
+		border-bottom: 2px solid $middle-gray;
+
+		&:hover {
+			border-bottom: 2px solid $cyan;
+
+			&:before {
+				bottom: 0;
+				left: 50%;
+				content: "";
+				display: block;
+				margin-left: -8px;
+				position: absolute;
+				border-bottom: 8px solid $cyan;
+				border-left: 8px solid transparent;
+				border-right: 8px solid transparent;
+			}
+		}
+
+		&-on {
+			min-width: 80px;
+			background: $cyan;
+			border-bottom: none;
+		}
+	}
+}

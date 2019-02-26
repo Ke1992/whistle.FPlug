@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>FPlug</title>
+	</head>
+	<body>
+		<div id="header"></div>
+		<div id="main"></div>
+		<div id="footer"></div>
+		<script type="text/javascript">
+			//转义输出，便于ejs进行输出必要的信息
+			<%= '\<%try{data}catch(e){data = {};}%\>' %>
+
+			window.WEBDATA = <%= '\<%-JSON.stringify(data)%\>' %>;
+		</script>
+	</body>
+</html>
