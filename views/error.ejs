@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>FPlug</title>
+	<link href="/plugin.fplug/css/common.css" rel="stylesheet"><link href="/plugin.fplug/css/header.css" rel="stylesheet"><link href="/plugin.fplug/css/error.css" rel="stylesheet"><link href="/plugin.fplug/css/footer.css" rel="stylesheet"></head>
+	<body>
+		<div id="header"></div>
+		<div id="main"></div>
+		<div id="footer"></div>
+		<script type="text/javascript">
+			//转义输出，便于ejs进行输出必要的信息
+			<%try{data}catch(e){data = {};}%>
+
+			window.WEBDATA = <%-JSON.stringify(data)%>;
+		</script>
+	<script type="text/javascript" src="/plugin.fplug/js/common.js"></script><script type="text/javascript" src="/plugin.fplug/js/header.js"></script><script type="text/javascript" src="/plugin.fplug/js/error.js"></script><script type="text/javascript" src="/plugin.fplug/js/footer.js"></script></body>
+</html>
