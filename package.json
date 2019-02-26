@@ -25,7 +25,8 @@
     "ejs": "^2.6.1",
     "koa": "^2.7.0",
     "koa-static": "^5.0.0",
-    "koa-views": "^6.1.5"
+    "koa-views": "^6.1.5",
+    "request": "^2.88.0"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
