@@ -5,7 +5,7 @@ v1.0.3
 # 安装
 ## 安装whistle
 请参考：[https://github.com/avwo/whistle#whistle](https://github.com/avwo/whistle#whistle)  
-## whistle.FPlug
+## 安装whistle.FPlug
 ```
 $ npm install -g whistle.fplug
 ```
