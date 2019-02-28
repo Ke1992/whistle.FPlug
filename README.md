@@ -10,8 +10,8 @@ v1.0.3
 $ npm install -g whistle.fplug
 ```
 # 特性
-* 禁止缓存
 * vConsole注入
+* 禁止缓存
 * console日志
 * JS注入
 # 基础配置说明
