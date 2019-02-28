@@ -1,5 +1,5 @@
 # whistle.FPlug
-whistle插件，提供vConsole注入、禁止缓存、console日志、javascript注入（[Fiddler版FPlug](https://github.com/Ke1992/Fiddler-FPlug)）
+whistle插件，提供vConsole注入、禁止缓存、console日志、JS注入（[Fiddler版FPlug](https://github.com/Ke1992/Fiddler-FPlug)）
 # 版本
 v1.0.3
 # 安装
@@ -13,7 +13,7 @@ $ npm install -g whistle.fplug
 * 禁止缓存
 * vConsole注入
 * console日志
-* javascript注入
+* JS注入
 # 基础配置说明
 ## 插件启用/关闭
 ![blockchain](https://github.com/Ke1992/whistle.FPlug/blob/master/guide/switch.gif "插件启用/关闭")
@@ -24,5 +24,5 @@ $ npm install -g whistle.fplug
 ![blockchain](https://github.com/Ke1992/whistle.FPlug/blob/master/guide/cache.gif "禁止缓存")
 ## console日志
 ![blockchain](https://github.com/Ke1992/whistle.FPlug/blob/master/guide/console.gif "console")
-## javascript注入
+## JS注入
 ![blockchain](https://github.com/Ke1992/whistle.FPlug/blob/master/guide/invade.gif "js注入")
