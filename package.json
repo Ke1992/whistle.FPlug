@@ -1,6 +1,6 @@
 {
   "name": "whistle.fplug",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "whistle plug",
   "main": "index.js",
   "directories": {

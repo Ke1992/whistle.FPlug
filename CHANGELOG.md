@@ -3,6 +3,9 @@
 2、js注入增加指定url功能  
 3、增加ESlint  
 
+## v1.0.4
+1、更新README.md
+
 ## v1.0.3
 1、替换vConsole的CDN路径
 
