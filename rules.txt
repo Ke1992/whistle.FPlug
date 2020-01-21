@@ -1,3 +1,0 @@
-/www.example.com\/?\?serial=/ fplug://log
-/./ whistle.fplug://none
-/www.example.com\/?\?_t=/ filter://hide
