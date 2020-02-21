@@ -1,0 +1,84 @@
+@import "../../definition.scss";
+
+.ai-check {
+    &-span {
+        position: relative;
+        color: $light-black;
+        padding-right: 15px;
+
+        i {
+            position: relative;
+            top: -3px;
+            cursor: pointer;
+            margin-right: 5px;
+            font-size: 12px;
+            border: 2px solid $ponceau;
+            font-family: 'icomoon', 'Microsoft Yahei', Arial, Helvetica, sans-serif !important;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+
+            &::before {
+                content: "";
+            }
+
+            &.square {
+                padding: 2px 8px;
+            }
+
+            &.circular {
+                padding: 2px 8px;
+                border-radius: 100%;
+            }
+
+            &.hook {
+                padding: 2px;
+
+                &::before {
+                    content: "\ea10";
+                }
+            }
+
+            &.point {
+                padding: 2px;
+
+                &::before {
+                    content: "\e902";
+                }
+            }
+
+            &.dot {
+                padding: 2px;
+
+                &::before {
+                    content: "\e903";
+                }
+            }
+
+            &.fill {
+                color: $white;
+                background-color: $ponceau;
+            }
+
+            &.empty {
+                color: $ponceau;
+            }
+        }
+
+        &.disabled {
+            i {
+                cursor: not-allowed;
+                border: 2px solid $light-black;
+
+                &.fill {
+                    background-color: $light-black;
+                }
+
+                &.empty {
+                    color: $light-black;
+                }
+            }
+        }
+    }
+}

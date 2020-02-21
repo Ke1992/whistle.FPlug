@@ -59,3 +59,11 @@ typings/
 
 # next.js build output
 .next
+
+# 自定义
+package-lock.json
+index.js
+/lib/
+/public/
+/router/
+/shared/

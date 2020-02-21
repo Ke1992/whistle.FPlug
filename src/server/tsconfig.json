@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es2017",
+        "noImplicitAny": true,
+        "outDir": "../../",
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}

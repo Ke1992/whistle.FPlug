@@ -1,0 +1,84 @@
+@import "../../definition.scss";
+
+.sidebar {
+    .ellipsis {
+        width: 36px;
+        height: 10px;
+        margin: auto;
+        display: block;
+        padding-bottom: 15px;
+
+        i {
+            width: 6px;
+            height: 6px;
+            margin: 2px 3px;
+            border-radius: 100%;
+            display: inline-block;
+            background-color: $light-gray2;
+        }
+    }
+
+    ul {
+        width: 100%;
+        text-align: center;
+
+        a {
+            clear: both;
+            width: 100%;
+            display: block;
+            padding: 10px 0;
+            position: relative;
+            color: $light-gray2;
+
+            span {
+                display: block;
+
+                &.icon {
+                    font-size: 30px;
+                }
+
+                &.title {
+                    display: block;
+                    font-size: 14px;
+                    padding-top: 8px;
+                    font-weight: bold;
+                    letter-spacing: 2px;
+                    transition: all 0.3s;
+                }
+            }
+
+            &:hover {
+                color: $ponceau;
+
+                span.title {
+                    color: $light-gray2;
+                }
+            }
+        }
+    }
+
+    li {
+        width: 100%;
+        padding-bottom: 15px;
+
+        &.on a {
+            color: $ponceau;
+            position: relative;
+
+            span.title {
+                color: $white;
+            }
+
+            &::before {
+                top: 0;
+                width: 4px;
+                content: "";
+                height: 100%;
+                display: block;
+                position: absolute;
+                background-color: $ponceau;
+                border-radius: 0 4px 4px 0;
+            }
+        }
+    }
+}

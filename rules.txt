@@ -1,0 +1,5 @@
+/www.example.com\/?\?serial=/ fplug://log
+/./ fplug://none
+/www.example.com\/?\?_t=/ filter://hide
+
+# whistle.fplug:// 和 fplug:// 的区别: whistle.fplug://请求默认不会走到插件里面的server服务
