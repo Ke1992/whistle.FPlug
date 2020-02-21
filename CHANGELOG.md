@@ -1,7 +1,10 @@
 ## 后续版本规划
 1、console日志增加url过滤功能  
 2、js注入增加指定url功能  
-3、增加ESlint  
+
+## v1.0.5
+1、使用typescript重构
+2、调整目录结构
 
 ## v1.0.4
 1、更新README.md
