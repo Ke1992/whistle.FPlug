@@ -16,13 +16,17 @@ $ npm install -g whistle.fplug
 * JS注入
 # 基础配置说明
 ## 插件启用/关闭
-![blockchain](https://raw.githubusercontent.com/Ke1992/whistle.FPlug/master/docs/assets/switch.gif "插件启用/关闭")
+<img src="https://raw.githubusercontent.com/Ke1992/whistle.FPlug/master/docs/assets/switch.gif" width="800" alt="插件启用/关闭" />
+
 # 特性功能说明
 ## vConsole注入
-![blockchain](https://raw.githubusercontent.com/Ke1992/whistle.FPlug/master/docs/assets/vconsole.gif "vConsole")
+<img src="https://raw.githubusercontent.com/Ke1992/whistle.FPlug/master/docs/assets/vconsole.gif" width="800" alt="vConsole" />
+
 ## 禁止缓存
-![blockchain](https://raw.githubusercontent.com/Ke1992/whistle.FPlug/master/docs/assets/cache.gif "禁止缓存")
+<img src="https://raw.githubusercontent.com/Ke1992/whistle.FPlug/master/docs/assets/cache.gif" width="800" alt="禁止缓存" />
+
 ## console日志
-![blockchain](https://raw.githubusercontent.com/Ke1992/whistle.FPlug/master/docs/assets/console.gif "console")
+<img src="https://raw.githubusercontent.com/Ke1992/whistle.FPlug/master/docs/assets/console.gif" width="800" alt="console" />
+
 ## JS注入
-![blockchain](https://raw.githubusercontent.com/Ke1992/whistle.FPlug/master/docs/assets/invade.gif "js注入")
+<img src="https://raw.githubusercontent.com/Ke1992/whistle.FPlug/master/docs/assets/invade.gif" width="800" alt="js注入" />
