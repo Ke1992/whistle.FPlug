@@ -1,7 +1,7 @@
 # whistle.FPlug
 whistle插件，提供vConsole注入、禁止缓存、console日志、JS注入（[Fiddler版FPlug](https://github.com/Ke1992/Fiddler-FPlug)）
 # 版本
-v1.0.5
+v1.1.0
 # 安装
 ## 安装whistle
 请参考：[https://github.com/avwo/whistle#whistle](https://github.com/avwo/whistle#whistle)  
