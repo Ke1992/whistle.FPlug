@@ -59,6 +59,9 @@ module.exports = {
                 // 修改复制的目标路径
                 return targetPath.replace('src/client/assets/webfonts/', '');
             },
+        }, {
+            from: './src/server/shared/vconsole.min.js',
+            to: '../shared/vconsole.min.js',
         }]),
     ],
     module: {
