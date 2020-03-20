@@ -14,6 +14,7 @@ $ npm install -g whistle.fplug
 * 禁止缓存
 * console日志
 * JS注入
+* 文件映射
 # 基础配置说明
 ## 插件启用/关闭
 <img src="https://raw.githubusercontent.com/Ke1992/whistle.FPlug/master/docs/assets/switch.gif" width="800" alt="插件启用/关闭" />
