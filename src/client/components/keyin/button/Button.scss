@@ -28,6 +28,15 @@
         background: $blue;
     }
 
+    &-cancel {
+        color: $light-black;
+        background: transparent;
+
+        &:hover {
+            color: $ponceau;
+        }
+    }
+
     &-log {
         height: 30px;
         min-width: 80px;

@@ -1,0 +1,63 @@
+@import "../components/definition.scss";
+
+table {
+    width: 100%;
+    padding-top: 20px;
+    text-align: center;
+
+    thead {
+        th {
+            line-height: 46px;
+            border-bottom: 2px solid $ponceau;
+
+            &:nth-child(1) {
+                width: 100px;
+            }
+
+            &:nth-child(2) {
+                width: 320px;
+            }
+
+            &:nth-child(3) {
+                width: 580px;
+            }
+
+            &:nth-child(4) {
+                width: 140px;
+            }
+        }
+    }
+
+    tbody {
+        td {
+            height: 20px;
+            padding: 13px 0;
+            line-height: 20px;
+        }
+
+        tr {
+            &:nth-child(2n) {
+                background-color: #e7e8ed;
+            }
+
+            &.none {
+                background-color: transparent;
+
+                td {
+                    height: 140px;
+                    line-height: 140px;
+                }
+            }
+        }
+
+        span {
+            padding: 0 5px;
+            cursor: pointer;
+            color: $light-black;
+
+            &:hover {
+                color: $ponceau;
+            }
+        }
+    }
+}

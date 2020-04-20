@@ -1,13 +1,24 @@
 // 库
 import * as http from 'http';
 
+import WebSocket = require('ws');
+
+// whistle提供的Websocket对象
+export type WhistleWebSocket = WebSocket;
+
 // whistle提供的Request对象
 export interface WhistleRequest extends http.IncomingMessage {
     originalReq: {
         url: string;
         ruleValue: string;
+        headers: {
+            [key: string]: string;
+        };
     };
+    curSendState: string;
     passThrough: Function;
+    curReceiveState: string;
+    wsReceiveClient: WhistleWebSocket;
     request(callback: (res: http.IncomingMessage) => void): http.ClientRequest;
 }
 
@@ -15,9 +26,7 @@ export interface WhistleRequest extends http.IncomingMessage {
 export type WhistleResponse = http.ServerResponse;
 
 // whistle提供的server对象
-export interface WhistleServer {
-    on(type: string, callback: (req: WhistleRequest, res: WhistleResponse) => void): Function;
-}
+export type WhistleServer = http.Server;
 
 // whistle提供的Options对象
 export interface WhistleOptions {
@@ -46,4 +55,11 @@ export interface LogItem {
     serial: string;
     nowurl: string;
     content: string;
+}
+
+// websocket单条配置对象
+export interface WebSocketItem {
+    rule: string;
+    file: string;
+    type: 'Server' | 'Client';
 }

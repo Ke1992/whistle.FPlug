@@ -43,6 +43,8 @@ export default class RequestTool {
         return RequestTool.request(options, postData);
     }
 
+
+    // --------------------私有函数--------------------
     /**
      * 底层请求函数
      * @param options [请求所需要的参数]

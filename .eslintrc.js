@@ -2,6 +2,7 @@ module.exports = {
     env: {
         es6: true,
         node: true,
+        browser: true, // 是否启用浏览器全局变量
     },
     plugins: [
         'react',
@@ -25,9 +26,6 @@ module.exports = {
         ecmaFeatures: {
             jsx: true,
         },
-    },
-    env: {
-        browser: true, // 是否启用浏览器全局变量
     },
     settings: {
         "import/resolver": {

@@ -1,7 +1,6 @@
-// 库
-import * as _ from 'lodash';
 // 自己的库
 import ServerTool from '../shared/tools/ServerTool';
+import WebSocketTool from '../shared/tools/WebSocketTool';
 // 定义
 import {
     WhistleServer,
@@ -67,14 +66,6 @@ export default function (server: WhistleServer, options: WhistleOptions): void {
     });
 
     // 监听websocket请求
-    server.on('upgrade', (req) => {
-        // 修改 websocket 请求用，
-        req.passThrough();
-    });
-
-    // 监听tunnel请求
-    server.on('connect', (req) => {
-        // 修改普通 tcp 请求用
-        req.passThrough();
-    });
+    // 实现思路参考: https://github.com/whistle-plugins/whistle.custom-ws
+    WebSocketTool.handleWebSockeListening(server, options);
 }

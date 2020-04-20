@@ -34,3 +34,20 @@ export interface LogItem {
     nowurl: string;
     content: string;
 }
+
+// websocket单条配置对象
+export interface WebSocketItem {
+    key: string;
+    rule: string;
+    file: string;
+    type: 'Server' | 'Client';
+}
+
+// websocket配置弹框参数
+export interface DialogParam {
+    key?: string;
+    rule?: string;
+    file?: string;
+    confirmFunc: Function;
+    type?: 'Server' | 'Client';
+}

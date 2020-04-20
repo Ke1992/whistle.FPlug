@@ -139,6 +139,16 @@ export default class AiCheck extends Component<AiCheckProps, AiCheckState> {
     }
 
     /**
+     * 更新数据
+     * @param data [需要更新的数据]
+     */
+    update(data: string[]): void {
+        this.setState({
+            result: data,
+        });
+    }
+
+    /**
      * 获取数据
      */
     getData(): string {

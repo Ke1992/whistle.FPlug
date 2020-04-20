@@ -14,7 +14,7 @@ interface ButtonProps {
 
 /**
  * text: 按钮文案
- * type: 按钮类型（jump、search、submit）
+ * type: 按钮类型（jump、search、submit、cancel）
  */
 export default class Button extends Component<ButtonProps, {}> {
     private static defaultProps = {

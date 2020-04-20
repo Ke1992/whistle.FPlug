@@ -100,7 +100,7 @@ const INVADE_REQUEST = `
     </script>`;
 
 /**
- * rule工具类
+ * Server工具类
  */
 export default class ServerTool {
     /**
@@ -142,6 +142,11 @@ export default class ServerTool {
         return result;
     }
 
+    /**
+     * 处理文件映射相关逻辑
+     * @param req [whistle提供的Request对象]
+     * @param res [node的ServerResponse对象]
+     */
     public static async handleServerFileMapping(
         req: WhistleRequest, res: WhistleResponse,
     ): Promise<void> {

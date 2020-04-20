@@ -7,6 +7,7 @@ module.exports = {
     entry: {
         index: './src/client/pages/index.tsx',
         invade: './src/client/pages/invade.tsx',
+        websocket: './src/client/pages/websocket.tsx',
     },
     output: {
         // 根据entry的key值来生成对应name
@@ -32,6 +33,12 @@ module.exports = {
         new HtmlWebpackPlugin({
             chunks: ['invade'], // 该文件包含哪些entry
             filename: './invade.html', // 指定文件名称，同时可以指定路径
+            template: './src/client/template.html',
+        }),
+        // websocket页面
+        new HtmlWebpackPlugin({
+            chunks: ['websocket'], // 该文件包含哪些entry
+            filename: './websocket.html', // 指定文件名称，同时可以指定路径
             template: './src/client/template.html',
         }),
         // 提取css成单独文件

@@ -7,6 +7,10 @@ export const MenuList = [{
     title: '日志',
     icon: 'icon-paper',
     url: '/plugin.fplug/invade.html',
+}, {
+    title: 'WS',
+    icon: 'icon-link',
+    url: '/plugin.fplug/websocket.html',
 }];
 
 // 工具列表
