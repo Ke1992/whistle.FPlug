@@ -157,6 +157,13 @@ export default class ServerTool {
             },
         } = req;
 
+        // 如果对应文件不存在，直接转发
+        if (!fs.existsSync(ruleValue)) {
+            console.error(ruleValue);
+            req.passThrough();
+            return;
+        }
+
         // 获取url参数
         const param = new URL(url).searchParams;
         const callback = param.get('callback') || param.get('cb');
