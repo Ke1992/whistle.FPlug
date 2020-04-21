@@ -1,7 +1,7 @@
 # whistle.FPlug
 whistle插件，提供vConsole注入、禁止缓存、console日志、JS注入（[Fiddler版FPlug](https://github.com/Ke1992/Fiddler-FPlug)）
 # 版本
-v1.1.0
+v1.1.1
 # 安装
 ## 安装whistle
 请参考：[https://github.com/avwo/whistle#whistle](https://github.com/avwo/whistle#whistle)  
@@ -15,6 +15,7 @@ $ npm install -g whistle.fplug
 * console日志
 * JS注入
 * 文件映射
+* websocket映射
 # 基础配置说明
 ## 插件启用/关闭
 <img src="https://raw.githubusercontent.com/Ke1992/whistle.FPlug/master/docs/assets/switch.gif" width="800" alt="插件启用/关闭" />
@@ -57,3 +58,12 @@ $ npm install -g whistle.fplug
 1、如果URL中携带callback或者cb，会自动替换文件里面第一个callback字符串  
 2、如果URL中携带callback或者cb，并且本地文件内容为JSON数据，则会自动包裹一层callback  
 <img src="https://raw.githubusercontent.com/Ke1992/whistle.FPlug/master/docs/assets/file.gif" width="800" alt="文件映射" />
+
+## WebSocket映射
+1、需要指定映射的类型  
+* Server: 代表需要替换客户端发送到服务端的数据
+* Client: 代表需要替换服务端发送到客户端的数据
+
+2、映射规则对应匹配的内容为实际传输的文本，规则支持正则表达式  
+<img src="https://raw.githubusercontent.com/Ke1992/whistle.FPlug/master/docs/assets/server.gif" width="800" alt="服务端映射" />
+<img src="https://raw.githubusercontent.com/Ke1992/whistle.FPlug/master/docs/assets/client.gif" width="800" alt="客户端映射" />
