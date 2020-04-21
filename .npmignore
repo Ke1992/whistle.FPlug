@@ -1,1 +1,8 @@
 docs/
+src/
+.eslintignore
+.gitattributes
+.eslintrc.js
+.stylelintrc.js
+webpack.config.js
+postcss.config.js
